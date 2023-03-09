@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Importações do proprio projeto -->
+    <link rel="stylesheet" href="../css/clima.css" />
+    <script src="../js/clima.js" defer></script>
+    
+    <!-- Icone da página -->
+    <link rel="shortcut icon" href="../ico/icone-pagina.png" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Clima geral!</title>
+  
+</head>
+  <body>
+
+    <div class="container">
+        <form action="">
+            <h3>Confira o clima de uma cidade:</h3>
+            <div class="area-form">
+                <input type="text" placeholder="Digite o nome da cidade" id="cidade_input">
+                <button id="pesquisar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </form>
+
+        <div id="dados_clima" class="esconder">   
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="cidade"></span>
+                <!-- Puxando da API as bandeiras -->
+                <img src="" alt="" id="pais"/>
+            </h2>
+
+            <p id="temperatura"><span></span>&deg;C</p>
+
+            <div id="descricao_container">
+                <p id="descricao"></p>
+                <!-- Puxando da API os icones -->
+                <img src="" alt="Condições do tempo" id="icone_do_tempo"/>
+            </div>
+
+            <div id="detalhes_container">
+                <p id="umidade">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+                <p id="vento">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>

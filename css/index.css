@@ -1,0 +1,267 @@
+/* GOGLE FONTES */
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Comfortaa:wght@500&family=Kanit:ital,wght@0,700;1,900&family=Nunito:wght@700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400&family=Roboto:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&family=Yellowtail&display=swap");
+
+/* ESTILO GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+/* PRIMEIRA PARTE */
+.primeira-parte {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: #121212;
+    overflow: hidden;
+}
+
+.circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00ff88;
+    clip-path: circle(50% at bottom right);
+}
+
+/* MENU */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+header .logo {
+    position: relative;
+    max-width: 150px;
+}
+
+header .navegacao ul {
+    display: flex;
+    position: relative;
+}
+
+header .navegacao li {
+    list-style: none;
+}
+
+header .navegacao li a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 6rem;
+    color: #fff;
+}
+
+/* CONTEUDO */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.container .texto {
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.container .texto h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+}
+
+.container .texto h2 span {
+    font-size: 3.5em;
+    color: #00ff88;
+}
+
+.container .texto p {
+    color: #fff;
+}
+
+.container .texto a {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 2.5rem;
+    background: #00ff88;
+    color: #fff;
+
+    transition:  0.3s ease-in-out;
+}
+
+.container .texto a:hover {
+    transform: translateY(-10px);
+}
+
+.container .texto button a {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 2.5rem;
+    background-color: #00ff88;
+    color: #fff;
+    border: none;
+}
+
+.container .texto button a:hover {
+    transform: translateY(-10px);
+}
+
+.container .texto button {
+    background-color: #121212;
+    border: none;
+}
+
+
+
+/* SEGUNDA PARTE */
+.esconder {
+    display: none;
+}
+
+
+/* RESPONSIVIDADE DO SITE PARA CELULAR */
+@media only screen and (max-width: 425px) {
+    
+    .primeira-parte {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 45px;
+        background: #121212;
+        overflow: hidden;
+    }
+
+    .circulo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #00ff88;
+        clip-path: circle(30% at bottom right);
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px 15px;
+    }
+
+    header .logo {
+        position: relative;
+        max-width: 80px;
+    }
+
+    header .navegacao li {
+        list-style: none;
+        margin-left: -5px;
+    }
+
+    header .navegacao li a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .container .texto h2 {
+        color: #fff;
+        font-size: 0.5em;
+        margin-bottom: 10px;
+        line-height: 0.8em;
+        font-weight: 700;
+        padding: 20px 0px;
+    }
+
+    .container .texto h2 span {
+        font-size: 1.0em;
+        color: #00ff88;
+    }
+
+    .container .texto p {
+        color: #fff;
+        margin-right: -30px;
+    }
+}
+
+
+/* RESPONSIVIDADE DO SITE PARA TABLET */
+@media only screen and (max-width: 768px) {
+    
+    header .navegacao li a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-left: 2rem;
+        color: #fff;
+    }
+
+    .container .texto {
+        max-width: 300px;
+        margin-right: 10px;
+    }
+
+    .container .texto h2 {
+        color: #fff;
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        line-height: 2em;
+        font-weight: 700;
+    }
+
+    .container .texto h2 span {
+        font-size: 2.8em;
+        color: #00ff88;
+    }
+
+    .container .texto p {
+        font-size: 1rem;
+        color: #fff;
+    }    
+
+  }
+
+
+
